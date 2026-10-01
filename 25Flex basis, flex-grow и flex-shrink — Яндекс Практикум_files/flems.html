@@ -1,0 +1,132 @@
+
+<!-- saved from url=(0121)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/04-flexbox/13-basis-grow-shrink/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Полезный подкаст</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-width: 1100px;
+
+  /*
+  1. Превратите во флекс-контейнер.
+  2. Установите направление column.
+  3. Добавьте минимальную высоту 100%.
+  */
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 25px 15px;
+  background-color: #80d994;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+
+.main {
+  display: flex;
+
+  /* Добавьте flex-grow */
+}
+
+.content {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 25px;
+  width: 100%;
+  padding: 15px;
+}
+
+.card {
+  width: 300px;
+  min-height: 200px;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.card__content {
+  padding: 15px 10px;
+}
+
+.card__image {
+  width: 100%;
+  height: 200px;
+  border-bottom: 2px solid black;
+  object-fit: cover;
+}
+</style></head>
+  <body>
+    <header>
+      <h1 class="header__title">Полезный подкаст</h1>
+    </header>
+    <main class="main">
+      <section class="content">
+        <div class="card card_first">
+          <img src="./image-1.jpg" alt="Листья зелёного растения крупно" class="card__image">
+          <div class="card__content">
+            <h2 class="card__title">Эпизод 1</h2>
+            <p class="card__description">Как гореть, но не выгореть</p>
+          </div>
+        </div>
+        <div class="card card_second">
+          <img src="./image-2.jpg" alt="Листья папоротника крупно" class="card__image">
+          <div class="card__content">
+            <h2 class="card__title">Эпизод 2</h2>
+            <p class="card__description">Где найти силы на учёбу</p>
+          </div>
+        </div>
+        <div class="card card_third">
+          <img src="./image-3.jpg" alt="Листья фиолетового растения крупно" class="card__image">
+          <div class="card__content">
+            <h2 class="card__title">Эпизод 3</h2>
+            <p class="card__description">Как правильно отдыхать</p>
+          </div>
+        </div>
+        <div class="card card_fourth">
+          <img src="./image-4.jpg" alt="Листья ярко-красного растения крупно" class="card__image">
+          <div class="card__content">
+            <h2 class="card__title">Эпизод 4</h2>
+            <p class="card__description">Как не надо учиться</p>
+          </div>
+        </div>
+        <div class="card card_fifth">
+          <img src="./image-5.jpg" alt="Коричневый плод растения крупно" class="card__image">
+          <div class="card__content">
+            <h2 class="card__title">Эпизод 5</h2>
+            <p class="card__description">Слушаем тихую музыку</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer__text">Подписывайтесь везде</p>
+    </footer>
+  
+
+</body></html>

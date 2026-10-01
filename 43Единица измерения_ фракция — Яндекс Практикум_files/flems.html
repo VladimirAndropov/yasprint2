@@ -1,0 +1,44 @@
+
+<!-- saved from url=(0110)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/06-grid-layout/06-fr/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фракция</title>
+  <link rel="stylesheet" href="./style.css">
+<style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 2fr 3fr;
+  width: 600px;
+}
+
+.container > * {
+  border: 1px solid #fd24af;
+}
+</style></head>
+<body>
+  <div class="container">
+    <img src="./image.svg" alt="изображение головы с пазлом внутри">
+    <div></div>
+    <div></div>
+  </div>
+
+
+</body></html>

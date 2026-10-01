@@ -1,0 +1,11 @@
+@font-face {
+    src: local(./SuisseIntl-Light.woff);
+    font-family: 'Suisse';
+    font-weight: lighter;
+}
+
+@font-face {
+    src: local(./SuisseIntl-Regular.woff);
+    font-family: 'Suisse';
+    font-weight: normal;
+}

@@ -1,0 +1,72 @@
+
+<!-- saved from url=(0120)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/06-grid-layout/01-what-is-grid/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Плиточная раскладка на флексбоксах</title>
+  <link rel="stylesheet" href="./style.css">
+<style id="styles/style.css">body {
+  min-width: 850px;
+  max-width: 850px;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.main-grid {
+  height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cell-half-width {
+  width: calc(50% - 5px);
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cell-half-height {
+  height: calc(50% - 5px);
+  object-fit: cover;
+}
+
+.cell-third-height {
+  height: calc((100% - 30px)/4);
+  object-fit: cover;
+  object-position: center;
+}
+</style></head>
+<body>
+  <div class="row main-grid">
+    <div class="column cell-half-width">
+      <img class="cell-half-height" src="./1.jpg" alt="Куриные яйца с нарисованными на них лицами">
+      <div class="row cell-half-height">
+        <img class="cell-half-width" src="./2.jpg" alt="Куриные яйца с нарисованными на них лицами">
+        <img class="cell-half-width" src="./3.jpg" alt="Куриные яйца с нарисованными на них лицами">
+      </div>
+    </div>
+    <div class="cell-half-width column">
+      <img class="cell-third-height" src="./4.jpg" alt="Куриные яйца с нарисованными на них лицами">
+      <img class="cell-third-height" src="./5.jpg" alt="Куриные яйца с нарисованными на них лицами">
+      <img class="cell-third-height" src="./6.jpg" alt="Куриные яйца с нарисованными на них лицами">
+      <img class="cell-third-height" src="./7.jpg" alt="Куриные яйца с нарисованными на них лицами">
+    </div>
+  </div>
+
+
+</body></html>

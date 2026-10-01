@@ -1,0 +1,83 @@
+
+<!-- saved from url=(0115)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/06-grid-layout/12-overlay/example-01/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Наложение грид-областей</title>
+  <link rel="stylesheet" href="./font.css">
+  <link rel="stylesheet" href="./style.css">
+<style id="fonts/font.css">@font-face {
+  font-family: Comforter;
+  src:
+    url(./fonts/Comforter-Regular.woff2) format('woff2'),
+    url(./fonts/Comforter-Regular.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+</style><style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #fd24af;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 600px;
+  height: 400px;
+}
+
+.grid__quote {
+  display: flex;
+  justify-content: center;
+  grid-column: 2/12;
+  grid-row: 3/11;
+  align-items: center;
+  margin: 0;
+  border-radius: 4px;
+  font-family: Comforter, fantasy;
+  font-size: 80px;
+  background-color: #fff;
+}
+
+.grid__man {
+  grid-column: 5/9;
+  grid-row: 5/12;
+  width: 100%;
+  height: 100%;
+}
+
+.grid__plaster {
+  grid-column: 11/13;
+  grid-row: -10/-8;
+  width: 100%;
+}
+
+.grid__cursor {
+  grid-column: 3/5;
+  grid-row: 10/12;
+  width: 100%;
+}
+</style></head>
+<body>
+  <div class="grid">
+    <blockquote class="grid__quote">
+      <p>Следи за собой,<br>будь осторожен.</p>
+    </blockquote>
+    <img src="./man.svg" alt="иллюстрация с человеком, который закатывает смотрит наверх" class="grid__man">
+    <img src="./plaster.svg" alt="иллюстрация с пластырем" class="grid__plaster">
+    <img src="./cursor.svg" alt="изображение курсора мыши" class="grid__cursor">
+  </div>
+
+
+</body></html>

@@ -1,0 +1,124 @@
+
+<!-- saved from url=(0123)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/05-positioning/07-position-sticky/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ментальная гигиена</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./styles(1).css">
+  <style id="css/styles.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 850px;
+  margin: 0;
+  padding: 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
+  box-sizing: border-box;
+  height: 100vh;
+  min-height: 550px;
+  border: 1px solid #000;
+  padding: 25px;
+  background-color: #fff;
+}
+
+.section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.section-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 50%;
+  height: 100%;
+}
+
+.section-block {
+  flex-grow: 1;
+  width: 40%;
+  height: 50%;
+  border: 1px solid #000;
+}
+
+.section-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-title {
+  position: sticky;
+  margin: 0;
+  font-weight: 800;
+  font-size: 38px;
+  text-transform: uppercase;
+}
+</style></head>
+  <body>
+    <section class="section">
+      <h2 class="section-title">Физическая активность</h2>
+      <div class="section-content">
+        <div class="section-block">
+          <img src="./sport-1(1).jpg" alt="Ноги поднимаются по лестнице" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./sport-2(1).jpg" alt="Девушка медитирует на закате" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./sport-3(1).jpg" alt="Мужчина бежит по улице" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./sport-4(1).jpg" alt="Мужчина едет на велосипеде" class="section-image">
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Здоровый сон</h2>
+      <div class="section-content">
+        <div class="section-block">
+          <img src="./sleep-1(1).jpg" alt="Попугай спит на ветке" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./sleep-2(1).jpg" alt="Белый котёнок спит на спине" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./sleep-3(1).jpg" alt="Чёрный щенок зевает" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./sleep-4(1).jpg" alt="Коала спит на ветке" class="section-image">
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <h2 class="section-title">Правильное питание</h2>
+      <div class="section-content">
+        <div class="section-block">
+          <img src="./food-1(1).jpg" alt="Тарелка с овощами и фруктами" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./food-2(1).jpg" alt="Человек жарит что-то на сковородке" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./food-3(1).jpg" alt="Тыквенный крем-суп" class="section-image">
+        </div>
+        <div class="section-block">
+          <img src="./food-4(1).jpg" alt="Артишоки и морковка" class="section-image">
+        </div>
+      </div>
+    </section>
+  
+
+</body></html>

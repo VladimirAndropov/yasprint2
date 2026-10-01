@@ -1,0 +1,87 @@
+
+<!-- saved from url=(0109)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/04-flexbox/11-order/example-02/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вёрстка для всех</title>
+    <link rel="stylesheet" href="./fonts(1).css">
+    <link rel="stylesheet" href="./style(1).css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 850px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0 50px;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  background-image: url(https://code.s3.yandex.net/web-code/images/dotted.svg);
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+  max-width: 960px;
+  padding: 25px;
+  background-color: #fff;
+}
+  
+.banner {
+  width: 100%;
+  padding: 15px 25px;
+}
+  
+.banner_first {
+  background-color: #5f0dee;
+}
+  
+.banner_second {
+  /* Добавьте order */
+  
+  background-color: #6dc1fd;
+}
+  
+.banner_third {
+  background-color: #80d994;
+}
+
+.banner_fourth {
+  background-color: #ffc802;
+}
+
+.banner__text {
+  font-size: 42px;
+  text-align: center;
+}
+</style></head>
+  <body>
+    <main class="main">
+      <div class="banner banner_first">
+        <p class="banner__text">Не думай о плохом,</p>
+      </div>
+      <div class="banner banner_second">
+        <p class="banner__text">А помни про хорошее.</p>
+      </div>
+      <div class="banner banner_third">
+        <p class="banner__text">Сомнений снежный ком</p>
+      </div>
+      <div class="banner banner_fourth">
+        <p class="banner__text">Несётся к нам из прошлого…</p>
+      </div>
+    </main>
+  
+
+</body></html>

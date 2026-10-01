@@ -1,0 +1,65 @@
+
+<!-- saved from url=(0108)https://sandbox.practicum-team.ru/tasks/01-semantics-and-layout/07-longread/01-all/example-12/pre/flems.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Флекс</title>
+    <link rel="stylesheet" href="./fonts.css">
+    <link rel="stylesheet" href="./style.css">
+  <style id="styles/style.css">* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 850px;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 2rem;
+}
+
+.main {
+  display: flex;
+  min-height: calc(100vh - 40vh);
+}
+
+article {
+  flex: 1;
+}
+
+nav,
+aside {
+  flex: 0 0 20vw;
+  background: #ffc802;
+}
+
+nav {
+  order: -1;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+footer {
+  height: 20vh;
+  background: #feafe8;
+}
+</style></head>
+  <body>
+    <header>Header</header>
+    <div class="main">
+      <article>Article</article>
+      <nav>Nav</nav>
+      <aside>Aside</aside>
+    </div>
+    <footer>Footer</footer>
+  
+
+</body></html>
